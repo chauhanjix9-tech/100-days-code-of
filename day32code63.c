@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[3] = {10, 20, 30};
+    int b[3] = {40, 50, 60};
+    int c[6];
+    int i;
+
+    for (i = 0; i < 3; i = i + 1)
+    {
+        c[i] = a[i];
+    }
+
+    for (i = 0; i < 3; i = i + 1)
+    {
+        c[i + 3] = b[i];
+    }
+
+    for (i = 0; i < 6; i = i + 1)
+    {
+        printf("%d ", c[i]);
+    }
+
+    return 0;
+}
