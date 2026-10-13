@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int number = 12;
+    int i;
+
+    printf("Factors of %d are: ", number);
+
+    for (i = 1; i <= number; i = i + 1)
+    {
+        if (number % i == 0)
+        {
+            printf("%d ", i);
+        }
+    }
+
+    return 0;
+}
